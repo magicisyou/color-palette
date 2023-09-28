@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Palette</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="left-div">
+        <input type="range" min="0" max="255" value="0" id="slider-red" />
+        <input type="range" min="0" max="255" value="0" id="slider-green" />
+        <input type="range" min="0" max="255" value="0" id="slider-blue" />
+        <input
+          type="text"
+          id="hex-input"
+          placeholder="Hexadecimal color code"
+        />
+        <div id="adder-sub">
+          <div id="color-box1"></div>
+        </div>
+        <button id="add-btn">Add</button>
+        <button id="delete-button">Delete</button>
+      </div>
+      <div id="right-div"></div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>

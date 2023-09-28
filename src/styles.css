@@ -1,0 +1,144 @@
+* {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#right-div {
+  width: calc(100% - 340px);
+  margin-top: 5vh;
+  display: flex;
+  max-height: 90vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-flow: wrap;
+}
+
+.color {
+  width: 60px;
+  height: 60px;
+  border-radius: 2px;
+  border: solid white 2px;
+  outline: solid black 2px;
+}
+
+.color:hover {
+  outline: double black 4px;
+}
+
+#left-div {
+  height: 90vh;
+  margin-top: 5vh;
+  border-right: solid teal 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+
+#left-div input[type="text"] {
+  border-radius: 5px;
+  /*  border: solid #002b5b 2px;*/
+  border: none;
+  width: 250px;
+  height: 50px;
+}
+
+::placeholder {
+  font-size: 10px;
+  color: #333;
+}
+
+#left-div input[type="range"] {
+  width: 250px;
+  height: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+#left-div input[type="range"]::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  border-radius: 50%;
+  background: #e4dccf;
+  border: solid #002b5b 2px;
+}
+
+#left-div input[type="range"]::-moz-range-thumb {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  background: #e4dccf;
+  border: solid #002b5b 2px;
+}
+
+#slider-red {
+  background-image: linear-gradient(to right, #000000, #ff0000);
+}
+
+#slider-green {
+  background-image: linear-gradient(to right, #000000, #00ff00);
+}
+
+#slider-blue {
+  background-image: linear-gradient(to right, #000000, #0000ff);
+}
+
+#left-div button {
+  width: 250px;
+  height: 50px;
+  background-color: teal;
+  border-radius: 5px;
+  border: none;
+}
+
+#left-div button:hover {
+  background-color: #009090;
+}
+
+#left-div button:active {
+  background-color: #007070;
+}
+
+#color-box1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    background-color: #2f2f2f;
+  }
+}
